@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Para el amor de mi vida 💖</title>
+<style>
+body {
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    text-align: center;
+    font-family: Arial;
+    color: white;
+    overflow: hidden;
+}
+h1 {
+    margin-top: 100px;
+    font-size: 40px;
+}
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    margin: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#yes {
+    background-color: #00ff88;
+}
+#no {
+    background-color: #ff4444;
+}
+</style>
+</head>
+
+<body>
+
+<h1>¿Quieres ser mi San Valentín por siempre? 💘</h1>
+
+<button id="yes" onclick="love()">Sí 💖</button>
+<button id="no" onclick="moveButton()">No 😢</button>
+
+<h2 id="mensaje"></h2>
+
+<script>
+function love(){
+    document.getElementById("mensaje").innerHTML = "Sabía que dirías que sí 😍 Te amo muchísimo ❤️";
+}
+
+function moveButton(){
+    var btn = document.getElementById("no");
+    btn.style.position = "absolute";
+    btn.style.top = Math.random()*500 + "px";
+    btn.style.left = Math.random()*500 + "px";
+}
+</script>
+
+</body>
+</html>
